@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--untuk mengatur tampilan halaman-->
+    <meta charset="UTF-8"> <!--untuk mendukung banyak karakter dan alfabet-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--untuk memberikan instruksi ke browser untuk menggunakan rendering yg terbaru-->
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <meta name="author" content="Daud Muhajir">
+    <meta name="keyword" content="Belajar HTML, Belajar Web">
+    <meta name="description" content="Praktikum Modul 2">
+    <meta name="robots" content="index, follow"><!--untuk memberikan petunjuk ke search engine bots bagaimana harus mengindex dan mengikuti tautan selanjutnya-->
+
+    <!--menentukan judul halaman-->
+    <title>Pengenalan HTML Tingkat Lanjut</title>
+</head>
+<body>
+    <!--menampilkan teks dengan font tebal-->
+    <strong>Praktikum Pemrograman Web</strong>
+    <hr>
+
+    <!--untuk menampilkan heading dengan size paling besar-->
+    <h1>Pengenalan HTML Tingkat Lanjut</h1>
+    <hr>
+
+    <!--Selanjutnya kode HTML Tulis di sini-->
+
+    <!--untuk membuat jeda di dalam baris-->
+    <br><br>
+
+    <!--untuk mengelompokkan elemen-->
+    <div>
+        <hr>
+        <strong>Program Studi Informatika Telkom University Surabaya</strong>
+    </div>
+
+    <div>
+        <!--untuk membuat heading dengan ukuran sedang dan untuk menampilkan elemen-elemen form-->
+        <h2>Element Form</h2>
+        <hr>
+        <!--untuk mendapatkan method yang ada di bawahnya dengan get-->
+        <form action="" method="get">
+            <!--untuk membuat textbox tanpa ada tulisan keterangan apa apa-->
+            <p><input type="text" name="text_form" size="20"></p>
+
+            <!--untuk menampilkan contoh ke pengguna-->
+            <p><input type="text" name="text_form" size="20" placeholder="Dengan Placeholder"></p>
+
+            <!--untuk menampilkan input tanpa bisa diubah oleh pengguna tetapi bisa disalin-->
+            <p><input type="text" name="readonly_form" size="20" value="Ini Readonly" readonly></p>
+
+            <!--untuk menonaktifkan elemen sehingga tidak bisa diubah maupun disalin oleh pengguna-->
+            <p><input type="text" name="disabled_form" value="Ini Disabled" size="20" disabled></p>
+
+            <!--untuk menandai agar input tersebut wajib diisi oleh pengguna-->
+            <p><input type="text" name="required_form" size="20" required placeholder="Ini Required"></p>
+
+            <!--contoh-->
+            <p><input type="email" name="email_form" size="20" placeholder="Ini Email"></p>
+            <p><input type="password" name="password_form" size="20" placeholder="Ini Password"></p>
+            <p><input type="file" name="file"></p>
+            <p><input type="hidden" name="hidden_form" value="123456"></p>
+            
+            <p>
+                <!--untuk menampilkan area yang bisa memungkinkan pengguna untuk mengetik panjang-->
+                <textarea name="textarea_form" cols="30" rows="5" placeholder="Ini Textarea"></textarea>
+            </p>
+            
+            <p>
+                <!--untuk membuat pilihan-->
+                <select name="pilihan">
+                    <option hidden value=1>Pilihan 1</option>
+                    <option value=2 selected>Pilihan 2</option>
+                    <option value=3>Pilihan 3</option>
+                    <option value=4>Pilihan 4</option>
+                    <option value=5>Pilihan 5</option>
+                </select>
+            </p>
+            
+            <p>
+                <!--untuk membuat radio-->
+                <input type="radio" name="radio1" value="radio1" id="radio1" checked><label for="radio1">Radio 1</label>
+                <input type="radio" name="radio2" value="radio2" id="radio2"><label for="radio2">Radio 2</label>
+            </p>
+            
+            <p>
+                <!--untuk membuat checkbox-->
+                <input type="checkbox" name="checkbox2" value="checkbox1" id="checkbox1"><label for="checkbox1">Checkbox 1</label>
+                <input type="checkbox" name="checkbox2" value="checkbox2" id="checkbox2"><label for="checkbox2">Checkbox 2</label>
+            </p>
+            
+            <p>
+                <!--untuk membuat tombol-->
+                <input type="reset" value="Reset">
+                <input type="submit" value="Simpan">
+                <input type="button" value="Button" onclick="">
+            </p>
+        </form>
+    </div>
+
+    <div>
+        <!--untuk menampilkan file eksternal bisa apa aja audio, video, atau yg lain ke halaman web-->
+        <h2>Element Embed</h2>
+        <hr>
+        <embed src="assets/file.pdf" width="800" height="1000" type="application/pdf">
+    </div>
+
+    <div>
+        <!--untuk menyematkan objek di dokumen seperti multimedia, apk atau yg lain yg ingin disematkan-->
+        <h2>Element Object</h2>
+        <hr>
+        <object data="assets/file.pdf" width="800" height="1000" type="application/pdf">
+        </object>
+    </div>
+
+    <div>
+        <!--untuk menyematkan sumber eksternal ke dalam halaman web seperti video-->
+        <h2>Element Iframe</h2>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v8fKPAIVObY" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+
+    <div>
+        <!--untuk mengakses SIO-->
+        <h2>Element Semantic HTML5</h2>
+        <hr>
+        <header>Ini Header</header>
+        <main>Ini Main</main> <!--untuk menandai konten utama-->
+        <section>Ini Section</section><!--untuk menandai konten terkait-->
+        <aside>Ini Aside</aside><!--untuk menandai konten samping-->
+        <nav>Ini Nav</nav><!--untuk menandai menu di sebuah halaman-->
+        <footer>Ini Footer</footer>
+    </div>
+</body>
+</html>
